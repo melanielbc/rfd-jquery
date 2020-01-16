@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <script>
 
+    <script>
       $(document).ready(function() {
-        $("#truc").click(function() {
-          $(this).hide();
+        $("#cacher").click(function() {
+          $("p").hide(2000); //=disparaitre //avec 2000 ça fait un glissement rapide
+        });
+        $("#afficher").click(function() {
+          $("p").show(4000); //=apparaitre //avec 4000 ça fait un glissement un peu moins rapide que quand ça disparait
         })
-      });
+      }); //Qaund on clic sur le bouton caché, je suis michel disparait et quand on clic sur afficher il réaparait
 
     </script>
-    <p id="machin">Clique-moi <span>grand</span> fou !</p>
-    <p id="truc">Clique-moi <span>encore</span> !</p>
-    <p id="bidule">J'en peux plus, <span>clique</span> !</p>
+    <p>Je suis Michel</p>
+    <button id="afficher">Afficher</button>
+    <button id="cacher">Cacher</button>
+
 
   </body>
-</html>
+</html
