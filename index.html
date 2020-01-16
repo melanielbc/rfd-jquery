@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="./assets/js/jquery.js">
-
-    </script>
+    <script src="./assets/js/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <script>
+
       $(document).ready(function() {
-        $("p").click(function() {
+        $("#truc").click(function() {
           $(this).hide();
         })
-      })
+      });
 
     </script>
-    <p>Clique-moi grand fou !</p>
-    <p>Clique-moi encore !</p>
-    <p>J'en peux plus, clique !</p>
+    <p id="machin">Clique-moi <span>grand</span> fou !</p>
+    <p id="truc">Clique-moi <span>encore</span> !</p>
+    <p id="bidule">J'en peux plus, <span>clique</span> !</p>
 
   </body>
 </html>
