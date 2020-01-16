@@ -4,24 +4,25 @@
     <meta charset="utf-8">
     <title></title>
     <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jqueryui.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
     <script>
-      $(document).ready(function() {
-        $("#cacher").click(function() {
-          $("p").hide(2000); //=disparaitre //avec 2000 ça fait un glissement rapide
-        });
-        $("#afficher").click(function() {
-          $("p").show(4000); //=apparaitre //avec 4000 ça fait un glissement un peu moins rapide que quand ça disparait
-        })
-      }); //Qaund on clic sur le bouton caché, je suis michel disparait et quand on clic sur afficher il réaparait
+    $(function() {
+      $("#michel").accordion();
+    })
 
     </script>
-    <p>Je suis Michel</p>
-    <button id="afficher">Afficher</button>
-    <button id="cacher">Cacher</button>
+    <div id="michel">
+      <h1>Titre1</h1>
+      <p>Ceci est un paragraphe, blablabla</p>
+      <h1>Titre1</h1>
+      <p>Ceci est un paragraphe, blablabla</p>
+      <h1>Titre1</h1>
+      <p>Ceci est un paragraphe, blablabla</p>
+
+    </div>
 
 
   </body>
